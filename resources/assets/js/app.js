@@ -21,6 +21,13 @@ const app = new Vue({
     el: '#app'
 });
 
+//countuptimer
+var start = new Date;
+
+setInterval(function() {
+    $('.timer').text((new Date - start) / 1000 + " Seconds");
+}, 1000);
+
 
     //button click counter
     $(function(){ // you can wrap it here with in document ready block

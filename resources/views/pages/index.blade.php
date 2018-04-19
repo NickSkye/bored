@@ -14,6 +14,14 @@
       <button id="button">click me</button>
       <canvas id="myCanvas" width="500" height="500"></canvas>
       </div>
+      <div>
+         <p class="timer">0</p>
+      </div>
+      <div>
+         <iframe src="http://www.theuselessweb.com" frameborder="0"></iframe>
+      </div>
+
+
 
 
 
