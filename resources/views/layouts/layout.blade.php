@@ -19,9 +19,7 @@
             <title>CuzYou'reBored</title>
 
 
-
-
-
+        
 
 
 
