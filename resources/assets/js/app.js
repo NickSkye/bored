@@ -22,6 +22,16 @@ const app = new Vue({
 });
 
 
+    //button click counter
+    $(function(){ // you can wrap it here with in document ready block
+        var i = 0;
+        $("#button").click(function(){
+            $('#clickedCounter').html(i++);
+        });
+    });
+
+
+//Cool Button to click
 window.requestAnimFrame = (function () {
     return  window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -191,3 +201,5 @@ var     FX = {};
         height = canvas.height = window.innerHeight;
     };
 })();
+
+
