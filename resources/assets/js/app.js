@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 require('./snek');
+require('./rocket');
 
 window.Vue = require('vue');
 
