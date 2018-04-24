@@ -10,6 +10,22 @@
                 <h1>Cuz You're Bored</h1>
             </div>
         </div>
+        <div class="wall"></div>
+        <div class="switch-div">
+            <input type="checkbox" class="side" id="side" checked="checked" />
+            <div class="onoff">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+            </div>
+            <label class="front" for="side"></label>
+
+
+            <div class="switchplate">
+                <div class="screw top">&ndash;</div>
+                <div class="screw bottom">&ndash;</div>
+            </div>
+            <div class="switch"></div>
+        </div>
 
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -156,11 +172,11 @@
             {{--</div>--}}
         {{--</div>--}}
 
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <iframe src="http://www.theuselessweb.com" frameborder="0"></iframe>
-            </div>
-        </div>
+        {{--<div class="row">--}}
+            {{--<div class="col-sm-12 text-center">--}}
+                {{--<iframe src="http://www.theuselessweb.com" frameborder="0"></iframe>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
 
     </div>

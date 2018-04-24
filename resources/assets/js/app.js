@@ -9,19 +9,24 @@ require('./bootstrap');
 require('./snek');
 require('./rocket');
 
-window.Vue = require('vue');
+// window.Vue = require('vue');
+//
+// /**
+//  * Next, we will create a fresh Vue application instance and attach it to
+//  * the page. Then, you may begin adding components to this application
+//  * or customize the JavaScript scaffolding to fit your unique needs.
+//  */
+//
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
+//
+// const app = new Vue({
+//     el: '#app'
+// });
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+
+
 //countuptimer
 var start = new Date;
 
@@ -42,7 +47,18 @@ setInterval(function() {
     });
 
 
+
 $(document).ready(function() {
+
+
+    $(".side").change(function() {
+        if(!this.checked) {
+            $('.wall').hide();
+        } else{
+            $('.wall').show();
+        }
+    });
+
 
     $(document).mousemove(function(e) {
 
