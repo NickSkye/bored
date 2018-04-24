@@ -34,7 +34,7 @@ setInterval(function() {
         $("#button").click(function(){
             $('#clickedCounter').html(i++);
             if (i > 100){
-                window.location = http://cuzyourebored.com/congrats-on-your-donation
+                window.location = "http://www.cuzyourebored.com/congrats-on-your-donation"
             }
         });
     });
