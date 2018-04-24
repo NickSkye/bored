@@ -10,4 +10,8 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
+    public function showFirst(){
+        return view('pages.congrats-on-your-donation');
+    }
+
 }

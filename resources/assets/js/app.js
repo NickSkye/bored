@@ -33,6 +33,9 @@ setInterval(function() {
         var i = 0;
         $("#button").click(function(){
             $('#clickedCounter').html(i++);
+            if (i > 100){
+                window.location = http://cuzyourebored.com/congrats-on-your-donation
+            }
         });
     });
 

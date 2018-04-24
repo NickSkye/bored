@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'PagesController@showHome');
+Route::get('/congrats-on-your-donation', 'PagesController@showFirst');
