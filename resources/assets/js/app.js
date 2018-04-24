@@ -20,8 +20,24 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+//countuptimer
+var start = new Date;
+
+setInterval(function() {
+    $('.timer').text((new Date - start) / 1000 + " Seconds");
+}, 1000);
 
 
+    //button click counter
+    $(function(){ // you can wrap it here with in document ready block
+        var i = 0;
+        $("#button").click(function(){
+            $('#clickedCounter').html(i++);
+        });
+    });
+
+
+//Cool Button to click
 window.requestAnimFrame = (function () {
     return  window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -191,3 +207,5 @@ var     FX = {};
         height = canvas.height = window.innerHeight;
     };
 })();
+
+
