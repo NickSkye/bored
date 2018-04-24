@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('./snek');
 
 window.Vue = require('vue');
 
@@ -47,7 +48,7 @@ $(document).ready(function() {
         //create img elements having pointer.png in their src
         // download it from
         // http://sites.google.com/site/dharmmotyar/Home/pointer.png
-        pointer = $('<img>').attr({'src':'images/pointer.png'});
+        pointer = $('<img style="width: 100px; height: 100px;">').attr({'src':'images/dog.gif'});
 
         //and append them to document
         $(document.body).append(pointer);
@@ -55,9 +56,9 @@ $(document).ready(function() {
         //show them at mouse position & fade out slowly
         pointer.css({
             'position':'absolute',
-            top: e.pageY  ,    //offsets
-            left: e.pageX    //offsets
-        }).fadeOut(1500);
+            top: e.pageY - 40  ,    //offsets
+            left: e.pageX +10   //offsets
+        }).fadeOut(1000);
     });
 });
 
