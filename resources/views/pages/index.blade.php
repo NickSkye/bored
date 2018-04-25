@@ -2,48 +2,46 @@
 
 @section('content')
     <div class="container-fluid">
+        @include('partials.constant')
+        <div id="mainsite" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
 
 
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>You Must Be Here</h2>
-                <h1>Cuz You're Bored</h1>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item  active">
+                    <div class="row snek-row">
+                        <div class="col-sm-12 text-center">
+                            <canvas id="gc" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p id="clickedCounter" class="clicked-counter">0</p>
+                            <button id="button">click me</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="ny.jpg" alt="New york" style="width:100%;">
+                </div>
             </div>
+
+
         </div>
-        <div class="wall"></div>
-        <div class="switch-div">
-            <input type="checkbox" class="side" id="side" checked="checked" />
-            <div class="onoff">
-                <span class="off">OFF</span>
-                <span class="on">ON</span>
-            </div>
-            <label class="front" for="side"></label>
+    </div>
 
 
-            <div class="switchplate">
-                <div class="screw top">&ndash;</div>
-                <div class="screw bottom">&ndash;</div>
-            </div>
-            <div class="switch"></div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <p id="clickedCounter" class="clicked-counter">0</p>
-                <button id="button">click me</button>
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <p class="timer">0</p>
-            </div>
-        </div>
-        <div class="row snek-row">
-            <div class="col-sm-12 text-center">
-                <canvas id="gc" width="400" height="400"></canvas>
-            </div>
-        </div>
+
+
+
 
         {{--<div class="row rocket-row">--}}
             {{--<div class="col-sm-12 text-center">--}}

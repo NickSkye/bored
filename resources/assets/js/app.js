@@ -54,8 +54,10 @@ $(document).ready(function() {
     $(".side").change(function() {
         if(!this.checked) {
             $('.wall').hide();
+
         } else{
             $('.wall').show();
+            $("#mainsite").carousel("next");
         }
     });
 

@@ -13736,6 +13736,7 @@ $(document).ready(function () {
             $('.wall').hide();
         } else {
             $('.wall').show();
+            $("#mainsite").carousel("next");
         }
     });
 
