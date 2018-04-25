@@ -13714,7 +13714,7 @@ __webpack_require__(37);
 var start = new Date();
 
 setInterval(function () {
-    $('.timer').text((new Date() - start) / 1000 + " Seconds");
+    $('.timer').text("You have been bored for " + Math.floor((new Date() - start) / 1000) + " Seconds");
 }, 1000);
 
 //button click counter
@@ -13736,6 +13736,7 @@ $(document).ready(function () {
             $('.wall').hide();
         } else {
             $('.wall').show();
+
             $("#mainsite").carousel("next");
         }
     });
@@ -13745,7 +13746,7 @@ $(document).ready(function () {
         //create img elements having pointer.png in their src
         // download it from
         // http://sites.google.com/site/dharmmotyar/Home/pointer.png
-        pointer = $('<img style="width: 100px; height: 100px;">').attr({ 'src': 'images/dog.gif' });
+        pointer = $('<img style="width: 100px; height: 100px; z-index: 100;">').attr({ 'src': 'images/dog.gif' });
 
         //and append them to document
         $(document.body).append(pointer);

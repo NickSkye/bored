@@ -28,8 +28,8 @@
 
 .wall {
     background: black;
-    height: 300%;
-    width: 300%;
+    height: 120%;
+    width: 100%;
 
         position: absolute;
         top: 0;
@@ -38,6 +38,14 @@
         left: 0;
 
         z-index: 20;
+
+    h2{
+        color: white;
+        position: absolute;
+        right: 0;
+        left: 20%;
+        top: 40%;
+    }
 
 
 }

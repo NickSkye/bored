@@ -69,7 +69,7 @@
 
         @yield('content')
         <footer>
-
+            @include('partials.footer')
         </footer>
     </body>
 

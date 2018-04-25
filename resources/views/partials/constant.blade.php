@@ -9,7 +9,7 @@
         <p class="timer">0</p>
     </div>
 </div>
-<div class="wall"></div>
+<div class="wall"><h2>Try Flipping the Switch for a Fun New Experience.</h2></div>
 <div class="switch-div">
     <input type="checkbox" class="side" id="side"  checked="checked" />
     <div class="onoff">
