@@ -13710,6 +13710,9 @@ __webpack_require__(37);
 // });
 
 
+//random iframe
+
+
 //countuptimer
 var start = new Date();
 
@@ -13730,6 +13733,13 @@ $(function () {
 });
 
 $(document).ready(function () {
+    var urls = ["https://www.yourmetricbirthday.com/", "http://theuselessweb.com"];
+    function getRandomUrl(urls) {
+        var minIndex = 0;
+        var maxIndex = urls.length - 1;
+        var randomIndex = Math.floor(Math.random() * (maxIndex - minIndex)) + minIndex;
+        return urls[randomIndex];
+    }
 
     $(".side").change(function () {
         if (!this.checked) {
@@ -13738,6 +13748,9 @@ $(document).ready(function () {
             $('.wall').show();
 
             $("#mainsite").carousel("next");
+            var randomSelectedUrl = getRandomUrl(urls);
+
+            $("#hereComesTheIframeInto").html("<iframe class='random-iframe' src='" + randomSelectedUrl + "' width='100%' height='100%' frameborder='0' scrolling='yes' seamless='seamless'></iframe>");
         }
     });
 
