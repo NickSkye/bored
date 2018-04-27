@@ -11,7 +11,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item  active">
                     <div class="row">
-                        <div class="col-sm-8 offset-2 text-center">
+                        <div class="col-sm-6 offset-3 text-center " style="margin-top: 10%;">
 
                                 <p>Welcome to cuzyourebored.com! You must be really bored to have made it to these parts of the internets. This website is a project to help quell my boredom and hopefully the results of it will help quell yours. </p>
                             <p>Also, Feel good about wasting your time on this site because <strong>part of each dollar from ad revenue and donations goes to a charity</strong> that will be featured on here monthly. if you don't want to donate, simply leave this site up and running and maybe click on the occasional ad to help support the charities we work with.</p>
@@ -22,7 +22,7 @@
                 <div class="carousel-item">
                     <div class="row snek-row">
                         <div class="col-sm-12 text-center">
-                            <canvas id="gc" width="400" height="400"></canvas>
+                            <canvas id="gc" width="500" height="500"></canvas>
                         </div>
                     </div>
                 </div>
@@ -37,9 +37,14 @@
                     </div>
                 </div>
 
-                <div class="carousel-item ">
-                    <div id="hereComesTheIframeInto"></div>
-                </div>
+
+                <div class="more-items"></div>
+                <div class="more-items"></div>
+                <div class="more-items"></div>
+                <div class="more-items"></div>
+                <div class="more-items"></div>
+
+
             </div>
 
 

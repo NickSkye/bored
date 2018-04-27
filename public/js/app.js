@@ -13733,7 +13733,7 @@ $(function () {
 });
 
 $(document).ready(function () {
-    var urls = ["https://www.yourmetricbirthday.com/", "http://theuselessweb.com"];
+    var urls = ["https://www.yourmetricbirthday.com/", "http://theuselessweb.com", "http://www.staggeringbeauty.com/", "http://www.pointerpointer.com/", "http://www.electricboogiewoogie.com/", "https://corgiorgy.com/", "http://www.crossdivisions.com/", "http://www.patience-is-a-virtue.org/", "http://www.yesnoif.com/", "http://onemillionlols.com/", "http://chihuahuaspin.com/", "http://pixelsfighting.com/", "http://intotime.com/", "https://www.omfgdogs.com/", "http://dogs.are.the.most.moe/", ""];
     function getRandomUrl(urls) {
         var minIndex = 0;
         var maxIndex = urls.length - 1;
@@ -13750,7 +13750,7 @@ $(document).ready(function () {
             $("#mainsite").carousel("next");
             var randomSelectedUrl = getRandomUrl(urls);
 
-            $("#hereComesTheIframeInto").html("<iframe class='random-iframe' src='" + randomSelectedUrl + "' width='100%' height='100%' frameborder='0' scrolling='yes' seamless='seamless'></iframe>");
+            $(".more-items").addClass('carousel-item').html("<iframe class='random-iframe' src='" + randomSelectedUrl + "' width='100%' height='100%' frameborder='0' scrolling='yes' seamless='seamless'></iframe>");
         }
     });
 
